@@ -1,4 +1,4 @@
-// Intent name: Weather at Time
+// Intent name: Weather at Time and Location
 
 import axios from 'axios'
 import { apiKey } from '../apiKey'
@@ -32,7 +32,7 @@ export const weatherAtTimeAndLocation = async (conv: any) => {
             element.delta_time = Math.abs(convertedTime.getUTCHours() - askTime.getUTCHours())
         })
 
-        // Delta current time and asked time.
+        // Difference between current time and asked time.
         let diffTime = Math.abs(new Date().getUTCHours() - askTime.getUTCHours())
 
         // Return the first next time that is available.
@@ -45,6 +45,6 @@ export const weatherAtTimeAndLocation = async (conv: any) => {
         }
 
     } catch (err) {
-        conv.add("Weather data is currently unavailable. Please try again later.")
+        conv.add("Weather data for time and location is currently unavailable. Please try again later.")
     }
 }
