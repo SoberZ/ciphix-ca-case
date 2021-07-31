@@ -35,6 +35,7 @@ intents.set("Weather from Flight", weatherFromFlight)
 intents.set("Weather from Flight - Departure", weatherAtDeparture)
 intents.set("Weather from Flight - Departure - Arrival", weatherAtArrival)
 intents.set("Weather from Flight - Departure - Arrival - Follow up", weatherAtArrivalFollowUp)
+intents.set("Default Welcome Intent - Simple", welcomeSimple)
 
 app.post('/', async (req, res) => {
     const agent: any = new WebhookClient({ request: req, response: res })
