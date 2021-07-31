@@ -27,15 +27,15 @@ export const weatherAtTimeAndLocation = async (conv: any) => {
             let convertedTime = new Date(element.dt * 1000)
             element.dt = convertedTime.toUTCString()
 
-            // Calculate the difference in hours between the element
-            // time and the asked time.
+            // Calculate the difference in hours between
+            // the weather data time and the asked time.
             element.delta_time = Math.abs(convertedTime.getUTCHours() - askTime.getUTCHours())
         })
 
         // Difference between current time and asked time.
         let diffTime = Math.abs(new Date().getUTCHours() - askTime.getUTCHours())
 
-        // Return the first next time that is available.
+        // Return the first next time that is available in the weather data.
         for(let el of weatherData) {
             if (el.delta_time == diffTime) {
                 return conv.add(
