@@ -12,6 +12,7 @@ import { weatherFromFlight } from './intents/weatherFromFlight'
 import { weatherAtDeparture } from './intents/weatherAtDeparture'
 import { weatherAtArrival } from './intents/weatherAtArrival'
 import { weatherAtArrivalFollowUp } from './intents/weatherAtArrivalFollowUp'
+import { welcomeSimple } from './intents/welcomeSimple'
 
 const app = express()
 
