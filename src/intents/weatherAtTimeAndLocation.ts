@@ -18,8 +18,7 @@ export const weatherAtTimeAndLocation = async (conv: any) => {
         // Retrieve the weather data at a location.
         const weather = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${coords.lat}&lon=${coords.lon}&exclude={alerts}&appid=${apiKey}&units=metric`)
 
-        // We need the hourly data so we can loop through the data and check
-        // which fits our time best.
+        // Hourly data that fits our time best.
         let weatherData: Array<any> = weather.data.hourly
 
         // Convert unix time to UTC date.

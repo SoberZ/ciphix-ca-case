@@ -2,6 +2,6 @@
 export const welcome = (conv: any) => {
 
     return conv.add(
-        `How are you doing?`
+        `Hey! How are you doing?`
     )
 }
