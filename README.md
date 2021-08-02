@@ -5,6 +5,8 @@
 
 The Ciphix Air Virtual Assistant is able to handle different inputs the users give the bot. The Virtual Assistant is also supported in Telegram via this link: https://t.me/CiphixAirBot
 
+The agent expects the user to ask a question and based on the question a response will be given. To get the weather, the virtual agent expects a city to be given in the message and retrieves the weather based on the city. Time should be specified in hours. The first next date of the given time will be the time that is used to retrieve the weather from. To obtain a flight's departure and destination weather, both will be asked to the pilot and the amount of hours before the airplane arrives at its destination.
+
 ## Features
 
 - Obtain the weather conditions for a specific city
