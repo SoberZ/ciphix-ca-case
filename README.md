@@ -17,8 +17,8 @@ The Ciphix Air Virtual Assistant is able to handle different inputs the users gi
 Problems that were encoutered were:
 - Retrieving the weather for a specific time. If a user wants to retrieve the weather for a time in future after the current or following day, the virtual assistant will not be able get gather that data. But for this case, it would seem unnecessary since flights are never over a day long.
 - Retrieving weather from the departure as well as the destination. This was solved by asking the destination and departure location to know from where we should gather the weather data from.
-
+- Wanted to implement a custom made front-end but retrieving the data from the dialogflow API wasn't figured out yet.
 
 ## Diagram
 
-
+![](./utils/CADiagram.jpg)
